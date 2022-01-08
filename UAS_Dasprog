@@ -1,0 +1,161 @@
+#include <iostream>
+using namespace std;
+
+void coach(){
+	cout<<"Manager Deska Fc : Taofik Rahman dan Edyan Supriatna"<<endl;
+	cout<<"Coach : Febri Febriandi "<<endl;
+}
+
+int main(){
+	cout<<"\n-----DESKA FOOTBALL CLUB-----\n";
+	cout<<endl;
+	
+	string nama;
+	string pgln;
+	string jenis;
+	string lahir;
+	string alamat;
+	float no;
+	string sekul;
+	string tinggi;
+	int umur;
+	string pos;
+	
+	cout<<"Biodata Diri \n";
+	cout<<"Nama Lengkap :";
+	cin>>nama;
+	getline(cin,nama);
+	
+	cout<<"Nama Panggilan :";
+	cin>>pgln;
+	getline(cin,pgln);
+	
+	cout<<"Jenis Kelamin :";
+	cin>>jenis;
+	getline(cin,jenis);
+	
+	cout<<"Tempat, Tanggal Lahir :";
+	cin>>lahir;
+	getline(cin,lahir);
+	
+	cout<<"Alamat :";
+	cin>>alamat;
+	getline(cin,alamat);
+	
+	cout<<"No Telepon/HP :";
+	cin>>no;
+
+	cout<<"Asal Sekolah	:";
+	cin>>sekul;
+	getline(cin,sekul);
+	
+	cout<<"Tinggi Badan	:";
+	cin>>tinggi;
+	
+	cout<<"Posisi Bermain :";
+	cin>>pos;
+	getline(cin,pos);
+	
+	cout<<"Usia Saat Ini :";
+	cin>>umur;
+	
+
+	cout<<endl;
+	
+	if(umur>=23)
+	{
+
+		cout<<"\n-----Selamat Datang Di Deska FC-----\n";
+		cout<<endl;
+		
+		int pilih;
+	cout<<"\n Daftar Menu \n";
+	cout<<"1. Persyaratan \n";
+	cout<<"2. Jadwal Latihan \n";
+	cout<<"3. Jadwal Pertandingan \n";
+	cout<<"4. Pembayaran \n";
+	cout<<"Pilih menu :";
+	cin>>pilih;
+	
+		if(pilih==1){
+			cout<<"Persyaratan"<<endl;
+			cout<<"1. Menyerahkan fotocopy KTP/Kartu Pelajar"<<endl;
+			cout<<"2. Menyerahkan fotocopy Kartu Keluarga"<<endl;
+			cout<<"3. Menyerahkan Akta Kelahiran"<<endl;
+			cout<<"4. Menyerahkan Pas foto 3x4"<<endl;
+			cout<<"5. Melengkapi formulir yang telah disediakan"<<endl;
+		}
+		else if(pilih==2){
+			cout<<"Jadwal Latihan" <<endl; 
+			cout<<"Rabu(15.30) dan Minggu(07.30)"<<endl;
+			cout<<"Konsekuensi :"<<endl; 
+			cout<<"Bila datang terlambat akan mendapatkan sanksi"<<endl;
+			cout<<"Bila tidak mengikuti 3 kali latihan secara berturut-turut maka akan diblacklist dari tim \n";
+		}
+		else if(pilih==3){
+			cout<<"Jadwal Pertandingan : setiap hari jum'at. \n";
+			cout<<"Konsekuensi : Bila tidak mengikuti 3 kali pertandingan secara berturut-turut maka akan diblacklist dari tim \n";
+		}
+		else if(pilih==4){
+			cout<<"Pembayaran Kas Sebesar Rp. 5000/minggu"<<endl;
+			cout<<"Bila tidak membayar tidak akan dimainkan saat pertandingan \n";
+		}
+		else{
+			cout<<"silahkan ulangi kembali"<<endl;
+		}
+	}
+
+	
+	
+	else if(umur<=19){
+
+		cout<<"\n-----Selamat Datang Di Deska U-19-----\n";
+		cout<<endl;
+		
+		int pilih;
+	cout<<"\n Daftar Menu \n";
+	cout<<"1. Persyaratan \n";
+	cout<<"2. Jadwal Latihan \n";
+	cout<<"3. Jadwal Pertandingan \n";
+	cout<<"4. Pembayaran \n";
+	cout<<"Pilih menu :";
+	cin>>pilih;
+		
+		if(pilih==1){
+			cout<<"Persyaratan"<<endl;
+			cout<<"1. Menyerahkan fotocopy KTP/Kartu Pelajar"<<endl;
+			cout<<"2. Menyerahkan fotocopy Kartu Keluarga"<<endl;
+			cout<<"3. Menyerahkan Akta Kelahiran"<<endl;
+			cout<<"4. Menyerahkan Pas foto 3x4"<<endl;
+			cout<<"5. Melengkapi formulir yang telah disediakan"<<endl;
+		}
+		else if(pilih==2){
+			cout<<"Jadwal Latihan :" <<endl; 
+			cout<<"Senin(15.30) dan Minggu(07.30)"<<endl;
+			cout<<"Konsekuensi :"<<endl; 
+			cout<<"Bila datang terlambat akan mendapatkan sanksi"<<endl;
+			cout<<"Bila tidak mengikuti 3 kali latihan secara berturut-turut maka akan diblacklist dari tim \n";
+		}
+		else if(pilih==3){
+			cout<<"Jadwal Pertandingan : setiap hari Kamis. \n";
+			cout<<"(Bila tidak mengikuti 3 kali pertandingan secara berturut-turut maka akan diblacklist dari tim)\n";
+		}
+		else if(pilih==4){
+			cout<<"Pembayaran Kas Sebesar Rp. 5000/minggu"<<endl;
+			cout<<"(Bila tidak membayar tidak akan dimainkan saat pertandingan)\n";
+		}
+		else{
+			cout<<"silahkan ulangi kembali"<<endl;
+		}
+	}
+	
+	cout<<endl;
+	cout<<endl;
+	coach();
+	cout<<endl;
+	
+	for(int a=0; a<5; a++){
+		cout<<"SALAM OLAHRGA!  ";
+	}
+
+}
